@@ -47,7 +47,6 @@ address {
     display: flex;
 }
 
-.list-item {}
 
 .button {
     font-weight: 600;
@@ -59,7 +58,6 @@ address {
     cursor: pointer;
 }
 
-.card {}
 
 .card-title {
     font-weight: 600;
@@ -93,7 +91,6 @@ address {
 
 /* #region Header */
 
-.header {}
 
 .navigation {
     display: flex;
@@ -176,7 +173,6 @@ address {
     border: 1px solid rgba(253, 146, 34, 0.1);
 }
 
-.socials-item {}
 
 /* #endregion */
 
@@ -317,7 +313,6 @@ address {
     margin-bottom: 22px;
 }
 
-.icon .icon-benefits {}
 
 .section-one .card-title {
     font-weight: 600;
@@ -405,7 +400,6 @@ address {
     padding: 60px 0px;
 }
 
-.section-title {}
 
 .recipe {
     display: flex;
@@ -437,7 +431,6 @@ address {
     width: 350px;
 }
 
-.ordered-list {}
 
 .section-three .list-item:not(:last-child) {
     margin-bottom: 24px;
@@ -472,7 +465,6 @@ address {
     padding: 60px 0px;
 }
 
-.section-title {}
 
 .section-four .list {
     flex-wrap: wrap;
@@ -490,11 +482,6 @@ address {
     text-align: center;
 }
 
-.section-four .card {}
-
-.section-four .card-image {}
-
-.section-four .card-title {}
 
 .section-four .card-text {
     margin-bottom: 18px;
@@ -517,7 +504,6 @@ address {
     padding: 60px 0px;
 }
 
-.section-five .section-title {}
 
 .section-five .list {
     gap: 16px;
@@ -527,9 +513,6 @@ address {
     border-radius: 15px 15px 0 0;
     width: calc((100% - 16px) / 3);
     overflow: hidden;
-}
-
-.section-five .card-image {
 }
 
 .section-five .card-image-box {
@@ -572,7 +555,6 @@ address {
     transform: translateY(0);
 }
 
-.section-five .card-image {}
 
 .section-five .card-caption {
     border-bottom: 1px solid rgba(17, 17, 17, 0.1);
@@ -619,7 +601,6 @@ address {
     padding: 24px;
 }
 
-.section-six .card {}
 
 .section-six .card-image {
     position: absolute;
@@ -705,8 +686,6 @@ address {
     gap: 50px;
 }
 
-.social-networks {}
-
 .footer-text {
     font-weight: 500;
     font-size: 14px;
@@ -720,8 +699,6 @@ address {
     gap: 14px;
 }
 
-.socials-item {}
-
 .footer .icon {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -730,10 +707,6 @@ address {
     height: 40px;
     fill: #fff;
 }
-
-.contacts {}
-
-.address {}
 
 .address .list {
     display: flex;
