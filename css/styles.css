@@ -145,19 +145,20 @@ address {
 }
 
 .nav-link-active{
+    position: relative;
+    display: inline-block;
     color: #fd9222;
 }
 
 .nav-link-active::after {
     content: "";
-    height: 2px;
     width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
     border-radius: 2px;
-    display: block;
-    position: relative;
+    height: 4px;
     background-color: #fd9222;
-    /* left: 0;
-    top: calc(50% - 1px); */
 }
 
 .nav-link:hover {
