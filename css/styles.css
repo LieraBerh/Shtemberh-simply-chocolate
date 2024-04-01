@@ -144,6 +144,19 @@ address {
     transition: color 250ms ease-in-out;
 }
 
+.nav-link-active{
+    color: #fd9222;
+}
+
+.nav-link-active::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: #fd9222;
+}
+
 .nav-link:hover {
     color: #fd9222;
 }
