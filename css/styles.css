@@ -152,9 +152,12 @@ address {
     content: "";
     height: 2px;
     width: 100%;
+    border-radius: 2px;
     display: block;
-    position: absolute;
+    position: relative;
     background-color: #fd9222;
+    /* left: 0;
+    top: calc(50% - 1px); */
 }
 
 .nav-link:hover {
