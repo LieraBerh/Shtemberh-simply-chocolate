@@ -863,9 +863,13 @@ address {
     color: #111;
     width: 298px;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .icon-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     stroke: #111;
 }
 
