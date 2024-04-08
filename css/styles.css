@@ -85,6 +85,19 @@ address {
     margin-bottom: 50px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* #endregion */
 
 /* #region Common styles */
@@ -197,6 +210,7 @@ address {
 .hero-section {
     background-color: rgba(17, 17, 17, 0.4);
     max-width: 1168;
+    height: 600px;
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
     margin: 0 32px 80px 32px;
@@ -950,6 +964,29 @@ address {
 
 .form-checkbox {
     margin-bottom: 40px;
+}
+
+.checkbox-span {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    cursor: pointer;
+}
+
+.checkbox:checked + .checkbox-label .checkbox-span {
+    background-color: #fd9222;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.checkbox:focus+.checkbox-label .checkbox-span {
+    border: 1px solid #fd9222;
 }
 
 .checkbox-link {

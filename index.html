@@ -573,8 +573,14 @@
                         placeholder="Enter text"></textarea>
                 </div>
                 <div class="form-checkbox">
-                    <input type="checkbox" name="accept" id="accept" value="true">
-                    <label for="accept" class="checkbox-label">I accept the
+                    <input type="checkbox" name="accept" id="accept" value="true" class="checkbox visually-hidden">
+                    <label for="accept" class="checkbox-label">
+                        <span class="checkbox-span">
+                            <svg width="10" height="10" class="icon-tick">
+                                <use href="./images/icons.svg#icon-icon-tick"></use>
+                            </svg>
+                        </span>
+                        I accept the
                         terms and conditions of the<a href="#" class="checkbox-link">
                             Privacy
                             Policy
