@@ -33,10 +33,23 @@ address {
 }
 
 .container {
-    max-width: 1168px;
-    padding: 0 16px;
+    max-width: 375px;
+    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+.container  {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+ .container  {
+    max-width: 1168px;
+  }
 }
 
 .title-span {
@@ -120,17 +133,36 @@ address {
     gap: 90px;
 }
 
+@media only screen and (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+.nav-menu {
+    gap: 28px;
+}
+}
 .home {
     display: inline-flex;
     align-items: center;
+    padding: 14px 0;
 }
 
 .home-link {
     font-family: inherit;
     font-style: italic;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28571;
+}
+
+@media only screen and (min-width: 1168px) {
+.home-link {
     font-size: 18px;
     line-height: 20px;
+}
 }
 
 .home-link-span {
@@ -138,14 +170,29 @@ address {
 }
 
 .logo {
+    width: 21px;
+    height: 21px;
     margin-left: 4px;
+}
+
+@media only screen and (min-width: 1168px) {
+.logo {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1168px) {
+.nav-list {
+    gap: 28px;
+}
 }
 
 .nav-link {
@@ -155,6 +202,7 @@ address {
     font-size: 14px;
     line-height: 16px;
     transition: color 250ms ease-in-out;
+    outline: none;
 }
 
 .nav-link-active{
@@ -174,10 +222,22 @@ address {
     background-color: #fd9222;
 }
 
+@media screen and (hover: hover) {
 .nav-link:hover {
+    color: #fd9222;
+}    
+}
+
+.nav-link:focus {
     color: #fd9222;
 }
 
+@media screen and not (hover: hover) {
+.nav-link:active {
+    color: #fd9222;
+}
+}
+ 
 .header .socials {
     display: flex;
     align-items: center;
@@ -185,31 +245,88 @@ address {
 }
 
 .icon {
-    display: inline-block;
-    transition: fill 250ms ease-in-out, border 250ms ease-in-out;;
+    width: 24px;
+    height: 24px;
+    transition: fill 250ms ease-in-out;
 }
 
-.header .icon {
+.socials-link {
+    display: inline-block;
     padding: 8px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 10px;
     overflow: hidden;
     width: 40px;
     height: 40px;
+    outline: none;
+    transition: border 250ms ease-in-out;
 }
 
-.icon:hover {
+@media screen and (hover: hover) {
+.socials-link:hover {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+}
+.socials-link:hover .icon {
     fill: rgba(253, 146, 34, 1);
+    outline: none;
+}
+}
+
+.socials-link:focus {
     border: 1px solid rgba(253, 146, 34, 0.1);
 }
 
+.socials-link:focus .icon {
+    fill: rgba(253, 146, 34, 1);
+}
+
+@media screen and not (hover: hover) {
+.socials-link:active {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+}
+
+.socials-link:active .icon {
+    fill: rgba(253, 146, 34, 1);
+}
+}
+
+.menu-btn {
+    border: none;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (hover: hover) {
+.menu-btn-icon:hover {
+        fill: #fd9222;
+    }
+}
+
+.menu-btn-icon:focus {
+    fill: #fd9222;
+}
+
+@media screen and not (hover: hover) {
+.menu-btn-icon:active {
+        fill: #fd9222;
+    }
+}
 
 /* #endregion */
 
 /* #region Hero section */
 .hero-section {
     background-color: rgba(17, 17, 17, 0.4);
-    max-width: 1168;
+    max-width: 1136px;
     height: 600px;
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
@@ -221,6 +338,8 @@ address {
     url(../images/hero/herobg.jpg);
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-title {
